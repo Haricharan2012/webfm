@@ -4,3 +4,21 @@ h2
    border: 2px solid orange;
    
   }
+  
+  
+p.first
+
+{
+
+font-style:italic;
+
+}
+
+
+p.second
+ 
+ {
+ 
+ font-style: oblique;
+ 
+}
