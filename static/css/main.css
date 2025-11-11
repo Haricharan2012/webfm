@@ -3,3 +3,27 @@ p
    color: red;
  
  }
+ 
+ body
+ {
+  background-color:#a8eeca;
+ }
+ 
+ p.cook
+   {
+   
+     position:absolute;
+     
+     	top: 200px;
+     	left: 650px;
+     	width: 800px;
+     	height: 500px;
+     	
+   }
+ 
+ 
+ h1
+   {
+   
+    text-align: center;
+  }
