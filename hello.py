@@ -1,14 +1,13 @@
-from flask import Flask
+from flask import Flask,render_template
 
 app =Flask(__name__)
 
-@app.route("/gomma")
+@app.route("/fileup")
 
 def hello_world():
 		
-	return "<tr> <th>Name</th> <th>date of upload</th> <th>size</th> <th>file_link</th></tr>"
-	
-	
+	return render_template('child.html');
+
 
 if __name__ == '__main__':
     app.run(debug=True)

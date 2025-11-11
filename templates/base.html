@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title> plastic </title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}"
+ 
+{% block head %} {% endblock %}
+
+<!--block for head -->
+<!-- ginger2 syntax for python flask -->
+</head>
+<body>
+<h1>Plastics</h1>
+<p> plastics are in use on a daily basis in modern times </p>
+
+  {% block body %} {% endblock %}
+<!--block for body -->
+  
+</body>
+</html>
