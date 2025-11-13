@@ -4,6 +4,7 @@
 <title> plastic </title>
 
 <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
  
 {% block head %} {% endblock %}
 
@@ -11,16 +12,15 @@
 <!-- ginger2 syntax for python flask -->
 </head>
 <body>
-<h1>Plastics</h1>
-<p> plastics are in use on a daily basis in modern times </p>
+<header>
+<h1 id="temp">Believe</h1>
+</header>
 
-<script>
-function loadim()
- {
-   
-  }
+<audio controls>
+  
+  <source src="vine-boom.mp3" type=audio/mpeg" autoplay>
 
-</script>
+
 
   {% block body %} {% endblock %}
 <!--block for body -->

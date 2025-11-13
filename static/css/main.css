@@ -6,7 +6,7 @@ p
  
  body
  {
-  background-color:#a8eeca;
+  background-color:#F7CAC9;
  }
  
  p.cook
@@ -26,4 +26,12 @@ p
    {
    
     text-align: center;
+    font-family: "sofia";
+  }
+  
+header
+  {
+   background: #F75270;
+   padding:10px;
+   
   }

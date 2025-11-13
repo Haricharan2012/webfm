@@ -6,14 +6,30 @@
 
 {% block body %} 
 
-<p>there are different types of plastic (renewble) and (non renewable) </p>
+<p class="cook"><img src="/static/images/cook.gif"  onload="loadim()" title="cook" wdth="800" height="500" alt="lhk" ></p>
 
-<p class="cook"><img src="/static/images/pain.jpg"  onload="loadim()" title="cook" wdth="800" height="500" alt="lhk" ></p>
+<p id="flip">Just Believe in your self!! :)</p>
 
 <script>
 function loadim()
  {
-   alert("image is loaded");
+  
+  var data;
+  
+  if(confirm("Do you Believe you're beautiful??"))
+    {
+     data="you're cooked bro!";
+    }
+    else
+     {
+      data="nice try but you're still cooked!";
+    }
+     
+   
+   const tite = document.getElementById("temp");
+   tite.innerText= "cooked!";
+   
+   
   }
 
 </script>
