@@ -1,7 +1,6 @@
 p 
  {
    color: red;
- 
  }
  
  body
@@ -50,3 +49,10 @@ footer
        top:910px;
        width:98.9%;
     }
+    
+    
+music
+   {
+     position:absolute;
+     top:800;
+   }
