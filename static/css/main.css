@@ -28,6 +28,7 @@ p
     font-family: "Twinkle Star";
     font-size:45px;
     color:white;
+    
   }
   
 header
@@ -50,9 +51,78 @@ footer
        width:98.9%;
     }
     
-    
-music
+ #music
    {
      position:absolute;
-     top:800;
+     top:230px;
+    left:800px;
    }
+   
+   
+#ques
+  {
+  
+  position:absolute;
+     top: 640px;
+     left: 550px;
+     font-size:30px;
+     color:#F75270;
+  
+  
+  }
+  
+#opt
+  {
+  
+  position:absolute;
+     top: 730px;
+     left: 800px;
+  
+  }
+  
+ #option1
+   {
+   
+   font-size:20px;
+   
+   }
+   
+  #option2
+  {
+  
+  }
+  
+  
+  #fake
+   {
+   
+      position:absolute;
+      top:1%;
+      left:50px;	
+      
+   }
+   
+   
+ fieldset
+  {
+  
+   border: 5px double;
+   border-color:#F75270;
+   padding:15px;
+  }
+   
+   
+#lb1,#lb2
+ 
+  {
+    color:#DC143C;
+ }
+ 
+ 
+
+#butx
+  {
+   position:absolute;
+   left:80px;
+   top:120px;
+  }
