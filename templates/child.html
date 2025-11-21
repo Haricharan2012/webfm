@@ -6,35 +6,13 @@
 
 {% block body %} 
 
-<p class="cook"><img id="fake" src="/static/images/emi2.gif"  title="cook" width="450" height="450" alt="lhk" ></p>
+<p class="cook"><img id="fake" src="/static/images/emi2.gif"  title="cook" width="450" height="450" alt="lhk" ></p>\
 
-
-
-<form id="opt">
-<fieldset>
-<input type="checkbox" id="option1" name="option1 value is="Absolutely">
-<label id=lb1 style="font-size:25px;" for="option1">Absolutely ;) </label><br><br>
-<input type="checkbox" id="option2" name="option2 value is="nope">
-<label id =lb2 style="font-size:25px;" for="option2">Nope</label><br><br>
-<input id="butx" type="button" value="submit" onclick="loadim()">
-</fieldset>	
-</form>
-
- 
 <script>
 function loadim()
  {
   
   var data;
-  
-  /*if(confirm("Do you Believe you're beautiful??"))
-    {
-     data="you're cooked bro!";
-    }
-    else
-     {
-      data="nice try but you're still cooked!";
-    }*/
      
    const tite = document.getElementById("temp");
    tite.innerText= "cooked!";
