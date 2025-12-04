@@ -2,27 +2,87 @@
 <html>
 <head>
 <title>File Upload Page</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/fileup.css')}}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Twinkle Star">
+
 <style>
-h1.head {
-    background-color: yellow;
-}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 8px;
+    
+    
 }
 </style>
 </head>
 <body>
 
-<h1 class="head">Logo</h1>
+<header id="hd">
+<h1 class="head">File Cloud</h1>
+</header>
 
-<h3>Upload a File</h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3 id=he>Upload a File</h3>
 
-<form action="/upload" method="POST" enctype="multipart/form-data">
-    <input type="file" name="file" required>
-    <button type="submit">Upload</button>
-</form>
+<!-- Drag & Drop Upload Box -->
+<div id="drop-area">
+    <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" id="fileElem" onchange="uploadFile(this.files)" hidden>
+        <div id="drop-text">Drag & Drop a file here<br>or click to select</div>
+    </form>
+</div>
+
+<script>
+const dropArea = document.getElementById("drop-area");
+
+dropArea.addEventListener("click", () => {
+    document.getElementById("fileElem").click();
+});
+
+// --- Drag Over ---
+dropArea.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    dropArea.classList.add("highlight");
+});
+
+// --- Drag Leave ---
+dropArea.addEventListener("dragleave", () => {
+    dropArea.classList.remove("highlight");
+});
+
+// --- Drop File ---
+dropArea.addEventListener("drop", (e) => {
+    e.preventDefault();
+    dropArea.classList.remove("highlight");
+
+    let dt = e.dataTransfer;
+    let files = dt.files;
+
+    uploadFile(files);
+});
+
+// --- Upload Function ---
+function uploadFile(files) {
+    if (files.length === 0) return;
+
+    const form = document.getElementById("upload-form");
+    const fileInput = document.getElementById("fileElem");
+
+    fileInput.files = files; // attach dropped file to form
+    form.submit();           // auto-submit file
+}
+</script>
+
 
 <br><br>
 

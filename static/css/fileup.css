@@ -1,0 +1,38 @@
+header
+{
+background:#AEDEFC;
+padding:10px;
+}
+
+h1.head {
+  text-align:center;
+  font-family:"Twinkle Star";
+}
+
+#he
+{
+text-align:center;
+}
+
+#drop-area {
+    border: 3px dashed #888;
+    padding: 40px;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#drop-area.highlight {
+    border-color: #3b8cff;
+    background-color: #eef4ff;
+}
+
+#drop-text {
+    font-family: "Twinkle Star", cursive;
+    color: #444;
+}
+
